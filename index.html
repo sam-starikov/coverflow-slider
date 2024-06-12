@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style/main.css">
 
     <title>coverflow-slider</title>
@@ -17,32 +20,94 @@
 
 <body>
 
-    <h1 class="title animate__animated animate__backInDown animate__delay-2s">Coverflow-slider</h1>
 
-    <div class="swiper no-select animate__animated animate__bounceIn animate__delay-3s">
+    <section class="content">
+        <div class="container">
+            <h1 class="title animate__animated animate__backInDown animate__delay-2s">Slider with tabs</h1>
 
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/01.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/02.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/03.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/04.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/05.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/06.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/07.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/08.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/09.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/10.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/11.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/12.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/13.jpg" alt="car"></div>
-            <div class="swiper-slide"><img src="img/14.jpg" alt="car"></div>
+
+            <div class="tabs">
+                <button class="tabs__btn tabs__btn--active" data-tab="all">All</button>
+                <button class="tabs__btn" data-tab="sedan">Sedan</button>
+                <button class="tabs__btn" data-tab="hatchback">Hatchback</button>
+                <button class="tabs__btn" data-tab="truck">Truck</button>
+            </div>
+
+
+            <div class="swiper no-select animate__animated animate__bounceIn animate__delay-3s ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/01.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/02.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/03.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/04.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/05.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/06.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/07.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/08.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/09.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/10.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/11.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/12.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/13.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="hatchback"><img src="img/hatchback/14.jpg" alt="car">
+                    </div>
+
+                    <div class="swiper-slide" data-tab-value="sedan"><img src="img/sedan/01.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="sedan"><img src="img/sedan/02.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="sedan"><img src="img/sedan/03.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="sedan"><img src="img/sedan/04.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="sedan"><img src="img/sedan/05.jpg" alt="car">
+                    </div>
+
+
+                    <div class="swiper-slide" data-tab-value="truck"><img src="img/truck/01.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="truck"><img src="img/truck/02.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="truck"><img src="img/truck/03.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="truck"><img src="img/truck/04.jpg" alt="car">
+                    </div>
+                    <div class="swiper-slide" data-tab-value="truck"><img src="img/truck/05.jpg" alt="car">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+
+        </div>
         </div>
 
-        <div class="swiper-pagination"></div>
-    </div>
+    </section>
+
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
